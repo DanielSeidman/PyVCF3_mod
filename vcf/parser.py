@@ -762,7 +762,7 @@ class Reader(object):
         if self._prepend_chr and chrom[:3] == "chr":
             chrom = chrom[3:]
 
-        self.reader = self._tabix.fetch(chrom, start, end)
+        self.reader = self._tabix.fetch(chrom, start, end, multiple_iterators=True)
         return self
 
 
