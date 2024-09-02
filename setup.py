@@ -29,8 +29,8 @@ if CYTHON:
     extras['ext_modules'] = [Extension("vcf.cparse", ["vcf/cparse.pyx"])]
 
 setup(
-    name='PyVCF3',
-    packages=['vcf', 'vcf.test'],
+    name='PyVCF3_mod',
+    packages=['vcf_mod', 'vcf_mod.test'],
     scripts=['scripts/vcf_melt', 'scripts/vcf_filter.py',
              'scripts/vcf_sample_filter.py'],
     author='James Casbon and @jdoughertyii',
