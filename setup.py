@@ -30,7 +30,7 @@ if CYTHON:
 
 setup(
     name='PyVCF3_mod',
-    packages=['vc', 'vcf.test'],
+    packages=['vcf', 'vcf.test'],
     scripts=['scripts/vcf_melt', 'scripts/vcf_filter.py',
              'scripts/vcf_sample_filter.py'],
     author='James Casbon and @jdoughertyii',
